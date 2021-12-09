@@ -147,7 +147,7 @@
             var showNum = String(displayNum.value);
             
             if(checkDecimal == false){
-                if(FlagNewNum == false){ // check if "," is the first button pressed
+                if(FlagNewNum || showNum == "0"){ // check if "," is the first button pressed
                     checkDecimal = true;
                     showNum = "0.";
                 }
